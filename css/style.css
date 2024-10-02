@@ -107,7 +107,7 @@ input, button {
 }
 
 /****** Search and filters ********/
-.search-and-filter {
+.search-title {
     display:flex;
     flex-direction: column;
 }
