@@ -38,10 +38,7 @@ h1 {
     height: 79px;
 }
 
-.logo {
-    height: 19px;
-    padding: 1.813em 0 1.813em 0;
-}
+
 
 a {
     color: inherit;
@@ -52,24 +49,8 @@ li {
     list-style: none;
 }
 
-.navbar-items {
-    display: flex;
-    flex-direction: row;
-    gap: 68px;
-    margin: 0;
-}
-
-.navbar-items li {
-    padding: 1em 0 1em 0;
-    border-top: solid transparent 2px;
-    box-sizing: border-box;
-}
-
-.navbar-items li:hover,
-.navbar-items li:active {
-    color:var(--main-color);
-    border-top: solid var(--main-color) 2px;
-    transition: all 0.3s ease-in-out;  
+input, button {
+    border: none;
 }
 
 .section-title {
@@ -100,6 +81,79 @@ li {
     color: var(--main-bg-color)
 }
 
+/********* navbar ********/
+.logo {
+    height: 19px;
+    padding: 1.813em 0 1.813em 0;
+}
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    gap: 68px;
+    margin: 0;
+}
+
+.navbar-items li {
+    padding: 1em 0 1em 0;
+    border-top: solid transparent 2px;
+    box-sizing: border-box;
+}
+
+.navbar-items li:hover,
+.navbar-items li:active {
+    color:var(--main-color);
+    border-top: solid var(--main-color) 2px;
+    transition: all 0.3s ease-in-out;  
+}
+
+/****** Search and filters ********/
+.search-and-filter {
+    display:flex;
+    flex-direction: column;
+}
+.search-form {
+    display:flex;
+}
+
+.fa-location-dot {
+    background-color: var(--main-bg-color);
+    color: black;
+    height: 18px;
+    width: 14px;
+    border-radius: 15px 0  0 15px; 
+    padding: 0.990em 1.125em;
+}
+
+.search-text {
+    border-top: solid var(--main-bg-color) 1px;
+    border-bottom: solid var(--main-bg-color) 1px;
+    border-left: solid transparent 1px;
+    border-right: solid transparent 1px;
+    font-weight: 700;
+    color: black;
+    font-size: 18px;
+    padding-left:1.130em;
+    transition: all 0.2s ease
+}
+
+.search-text:hover {
+    border: solid black 1px;
+    border-radius: 2px;
+}
+
+.search-btn {
+    background-color: var(--main-color);
+    border-radius: 0 15px 15px 0;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0 0.890em;
+    cursor: pointer;
+}
+
+.search-btn-mobile {
+    display: none;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
