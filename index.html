@@ -18,7 +18,7 @@
     <div class="main-container">
         <header>
             <h1>
-                <img class="logo" src="images/logo/Booki@3x.png" alt="Booki" >
+                <img class="logo" src="images/logo/Booki@3x.png" alt="Booki">
             </h1>
             <nav >
                 <ul class="navbar-items">
@@ -33,23 +33,54 @@
         </header>
         <main>
             <div class="search-and-filter">
-                <header class="search-title">
+                <header class="search-header">
                     <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </header >
                 <section class=search-bar>
                    <form method="get" action="" role="search" class="search-form">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <input type="search" class="search-text" name="q" placeholder="Ville" aria-label="Rechercher une ville" size="16" required>
-                    <button class="search-btn-mobile" type="submit" aria-label="Rechercher">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="search" class="search-text" name="q" placeholder="Ville" aria-label="Rechercher une ville" size="16" required>
+                        <button class="search-btn-mobile" type="submit" aria-label="Rechercher">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
                     <input class="search-btn" type="submit" value="Rechercher">
                    </form> 
                 </section>
-                <section>
 
+                <section class="filter-bar">
+                    <h3>Filtres</h3>
+                    <ul class="filter-items">
+                        <li>
+                            <button type="button" class="filter-btn" value="price" name="filter-btn" >
+                                <i class="fa-solid fa-money-bill-wave"></i> 
+                                <p class="filter-name">Économique</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="filter-btn" value="family" name="filter-btn" >
+                                <i class="fa-solid fa-person"></i>
+                                <p class="filter-name"> Familial</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="filter-btn" value="romantic" name="filter-btn" >
+                                <i class="fa-solid fa-heart"></i>
+                                <p class="filter-name">Romantique</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button"class="filter-btn"  value="fire" name="filter-btn" >
+                                <i class="fa-solid fa-fire"></i>
+                                <p class="filter-name">Nos pépites</p>
+                            </button>
+                        </li>
+                    </ul>
                 </section>
+                <div class="search-information">
+                    <i class="fa-solid fa-info"></i>
+                    <p class="search-information-text">Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
             </div>
             <div class="hebergements-and-populaires">
                 <section id="hebergements">

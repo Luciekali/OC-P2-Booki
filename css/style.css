@@ -30,6 +30,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 h1 {
@@ -37,8 +38,6 @@ h1 {
     font-size: 16px;
     height: 79px;
 }
-
-
 
 a {
     color: inherit;
@@ -58,6 +57,9 @@ input, button {
     font-size: 22px;
 }
 
+p {
+    margin: 8px 0 8px 1px;
+}
 .card {
     background-color: white;
     border-radius: 20px;
@@ -107,10 +109,17 @@ input, button {
 }
 
 /****** Search and filters ********/
-.search-title {
+.search-and-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.search-header {
     display:flex;
     flex-direction: column;
+    margin-bottom: 0px;
 }
+
 .search-form {
     display:flex;
 }
@@ -154,10 +163,57 @@ input, button {
 .search-btn-mobile {
     display: none;
 }
+
+.filter-bar {
+    display:flex;
+    align-items: center;
+}
+
+.filter-items {
+    display:flex;
+    gap: 19px;
+}
+
+.filter-btn {
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 2px 17px;
+    border-radius: 25px;
+    border: solid var(--main-bg-color) 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.filter-btn:hover {
+    background-color: var(--filter-bg-color);
+}
+
+.filter-name {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.search-information {
+    display: flex;
+    align-items: center;   
+}
+
+.fa-info {
+    border: solid 1px var(--main-bg-color);
+    border-radius: 999px;
+    padding: 6px 10px;
+}
+
+.search-information-text {
+    margin: 2.5px 0 2.5px 9px;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin: 30px 0;
 }
 
 .hebergements-and-populaires section {
