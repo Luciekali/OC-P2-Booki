@@ -42,6 +42,7 @@ h1 {
 .content-subtitle {
     font-size: 18px;
     font-weight: 700;
+    margin: 0;
 }
 
 a {
@@ -65,6 +66,10 @@ input, button {
 p {
     margin: 8px 0 8px 1px;
 }
+
+section {
+    margin-bottom: 35px;
+}
 .card {
     background-color: white;
     border-radius: 20px;
@@ -87,7 +92,9 @@ p {
 .neutral-star {
     color: var(--main-bg-color)
 }
-
+.fa-star {
+    margin-bottom: 5px;;
+}
 /********* navbar ********/
 .logo {
     height: 19px;
@@ -117,12 +124,16 @@ p {
 .search-and-filter {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap:35px;
 }
 .search-header {
     display:flex;
     flex-direction: column;
     margin-bottom: 0px;
+}
+
+.search-header p {
+    margin-bottom: 0;
 }
 
 .search-form {
@@ -172,6 +183,9 @@ p {
 .filter-bar {
     display:flex;
     align-items: center;
+    height:50px;;
+    margin: 0;
+    
 }
 
 .filter-items {
@@ -184,7 +198,7 @@ p {
     align-items: center;
     gap: 10px;
     background-color: white;
-    padding: 2px 17px;
+    padding: 4px 19px;
     border-radius: 25px;
     border: solid var(--main-bg-color) 2px;
     cursor: pointer;
@@ -208,16 +222,17 @@ p {
 .fa-info {
     border: solid 1px var(--main-bg-color);
     border-radius: 999px;
-    padding: 6px 10px;
+    padding: 4px 9px;
+    margin: 0;
 }
 
 .search-information-text {
     margin: 2.5px 0 2.5px 9px;
+    height: 24px;
 }
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display:flex;
-    margin: 35px 0;
     box-sizing: border-box;
     gap:40px;
 }
@@ -294,18 +309,18 @@ p {
 .populaires-cards .card {
     display:flex;
     margin-top: 30px;
-    height: 146px;
+    
     box-sizing: border-box;
 }
 
 .fa-chart-line {
-    width: 18px;
+    width: 16px;
     height: 16px;
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 146px;
+    height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     box-sizing: border-box;
@@ -363,11 +378,34 @@ p {
 
 .activites-cards .card img {
     height: 380px;
-   
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
+/******* Footer ******/
+footer nav {
+    display:flex;
+    background-color: var(--main-bg-color);
+}
+
+nav .nav-group {
+   display:flex; 
+   flex-direction: column;
+   width: 100%;
+   padding: 20px;
+  
+}
+.nav-group h3 {
+    margin: 0;
+}
+.nav-group ul {
+    padding: 0;
+    margin: 0; 
+}
+
+.nav-group li {
+    padding-top: 15px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
